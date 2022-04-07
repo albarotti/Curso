@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alba TFT</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-
+    <title>Fale comigo TFT</title>
 </head>
 <body>
     <header>
@@ -25,12 +24,12 @@
           
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-start">
-                <a class="navbar-item">
+                <a class="navbar-item" href="index.html">
                   TFT-Home
                 </a>
-
+          
                 <a class="navbar-item">
-                  Campeões 
+                  Campeoes 
                 </a>
           
                 <div class="navbar-item has-dropdown is-hoverable">
@@ -51,13 +50,12 @@
                     <hr class="navbar-divider">
                     <a class="navbar-item">
                       Outros
-                    </a>                    
-                  </div>                  
+                    </a>
+                  </div>
                 </div>
-                <a class="navbar-item">
-                  Fale comigo 
-                </a>
-            
+                <a class="navbar-item" href="fale comigo.html">
+                    Fale comigo 
+                  </a>
               </div>
           
               <div class="navbar-end">
@@ -105,39 +103,49 @@
               </div>
         </div>
         <div class="column is-half">
-            <article class="message is-info">
-            <div class="message-header"> 
-              Sobre mim <img  class="image is-32x32" src="innovator.png"   >  
-            </div>
-            <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-            </div>
-          </article>
-          <article class="message">
-            <div class="message-header">
-              Rankeadas <img  class="image is-32x32" src="Scrap.png" >
-            </div>
-            <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-            </div>
-          </article>
-          <article class="message is-link">
-            <div class="message-header">
-               O perigo do TFT em dupla <img  class="image is-32x32" src="Yordle.png" >
-            </div>
-            <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-            </div>
-          </article>
+            <form class="box">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input class="input" type="email" placeholder="@email.com">
+                  </div>
+                </div>
+                <div class="field">
+                    <label class="label">Motivo</label>
+                    <div class="control">
+                      <div class="select">
+                        <select>
+                          <option>Ajuda</option>
+                          <option>Dicas</option>
+                          <option>Interação</option>
+                          <option>Reclamação</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="file">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume">
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="fas fa-upload"></i>
+                        </span>
+                        <span class="file-label">
+                          Enviar arquivo
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                <div class="field">
+                    <label class="label">Mensagem</label>
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Escreva sua mensagem"></textarea>
+                    </div>
+                  </div>
+                <button class="button is-primary">Enviar</button>
+              </form>
         </div>
       </div>
-      
-      <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            Desenvolvido por <strong>Ghabryel Albarotti</strong> 
-        </div>
-      </footer>
       
 </body>
 </html>
